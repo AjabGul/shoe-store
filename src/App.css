@@ -1,38 +1,108 @@
-.App {
+.navbar {
+  background-color: #c7d8d8;
+  padding: 3px;
+}
+
+.navbar ul {
+  display: grid;
+  grid-template-columns: 2fr 0fr 0fr;
+  margin-right: 100px;
+  list-style-type: none;
+  color: black;
+}
+
+.navbar ul li {
+  margin-right: 10px;
+  font-size: 18px;
+  /* font-family: ; */
+  font-weight: lighter;
+  font-style: oblique;
+}
+.links {
+  color: black;
+  text-decoration-line: none;
+  cursor: pointer;
+}
+
+.home-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+    url("https://assets.wordstream.com/s3fs-public/styles/simple_image/public/images/media/images/fashion-marketing-tips.jpg?f4oqJ_AukTFMgb4jAoSe1eAQuUB1pMSE&itok=WkAH0fRA");
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+  background-position: center;
+  background-attachment: fixed;
+  height: 80vh;
+  width: 100%;
+}
+
+.home-container h2 {
+  font-family: fantasy;
+  font-style: oblique;
+  text-shadow: antiquewhite;
+  color: white;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.product-container h3 {
+  font-family: sans-serif;
+  font-size: 18px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.grid-container ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  margin-right: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grid-container li {
+  list-style-type: none;
+  border: solid rgb(197, 189, 219) 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.grid-container h2 {
+  font-size: 16px;
+  color: black;
+  text-align: center;
+}
+
+.grid-container img {
+  width: 550px;
+  margin-left: 15px;
+}
+
+.product-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+}
+
+.product-des {
+  border: 2px solid rgb(143, 136, 136);
+  text-align: center;
+  font-style: oblique;
+}
+
+.product-des img {
+  width: 600px;
+  height: 550px;
+  margin-left: 15px;
+}
+
+.footer-container {
+  background-color: #c7d8d8;
+  /* border: solid black 2px; */
+  font-weight: lighter;
+  position: fixed;
+  bottom: 2px;
+  width: 100%;
+  height: 35px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
